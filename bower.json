@@ -1,0 +1,17 @@
+{
+  "name": "efilnepo-less",
+  "version": "1.0.0",
+  "homepage": "https://github.com/efilnepo/efilnepo-less",
+  "authors": [
+    "efilnepo <efilnepo@gmail.com>"
+  ],
+  "description": "less files collection",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
