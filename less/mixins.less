@@ -1,0 +1,76 @@
+// Efilnepo custom mixins
+//e - means efilnepo
+//ep - should be applied to parent element
+//
+.e-caps() {
+text-transform: uppercase;
+}
+
+.e-v-align(@percentage) {
+width: 100%;
+margin-top: @percentage;
+}
+ 
+.e-divider(@height){
+height: @height;
+}
+ 
+.e-circle(@radius) {
+border-radius: @radius;
+height: @radius;
+width: @radius;
+line-height: @radius;
+}
+ 
+.e-no-padding() {
+padding: 0;
+}
+ 
+.e-no-margin() {
+margin: 0;
+}
+ 
+.e-top(@top) {
+position: absolute;
+top: @top;
+}
+ 
+.e-left(@left) {
+position: absolute;
+left: @left;
+}
+ 
+.e-right(@right) {
+position: absolute;
+right: @right;
+}
+ 
+.e-bottom(@bottom) {
+position: absolute;
+bottom: @bottom;
+}
+ 
+.e-position(@top; @right; @bottom; @left;) {
+//	position: absolute;
+.e-top(@top);
+.e-right(@right);
+.e-bottom(@bottom);
+.e-left(@left);
+}
+ 
+.e-responsive() {
+display: block;
+width: 100%;
+height: 100%;
+}
+ 
+.e-background(@url) {
+background: url(@url) no-repeat center center;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.e-size(@width; @height) {
+	width: @width;
+	height: @height;
+} 

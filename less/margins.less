@@ -1,0 +1,13 @@
+// Margin classes
+// Generate margin-top classes from negative mt-120 to positive mt120 (120 - pixels)
+// -------------------------
+ 
+@from : -120;
+@to : 120;
+.loop(@index) when(@index =< @to) {
+.mt@{index} {
+margin-top: unit(@index, px);
+}
+.loop(@index + 15);
+}
+.loop(@from);
